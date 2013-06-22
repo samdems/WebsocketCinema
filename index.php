@@ -13,10 +13,10 @@
 		    <div class="span2 offset1 well" style="min-width:100px;">
 		      	<?php include 'include/leftnav.php';?>
 		    </div>
-		    <div class="span8 well" style="min-width:650px;">
+		    <div class="span8 well" style="min-width:872;">
 				<b>Oceans and shit</b>
 				<hr>
-				<video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264"poster="http://video-js.zencoder.com/oceans-clip.png"data-setup="{}">
+				<video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="800" height="343"poster="http://video-js.zencoder.com/oceans-clip.png"data-setup="{}">
 			    	    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
     					<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
     					<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
@@ -24,18 +24,14 @@
 				</video>
 		    </div>
 		</div>
+		<script src="js/jquery-1.10.1.min.js"></script>
 		<script src="js/video.js"></script>
-	  	<script src="js/jquery-1.10.1.min.js"></script>
 	  	<script src="js/bootstrap.js"></script>
-	    <script src="js/websocket.js"></script>
-
-
-
-		
-		
-		<script >
-		var myPlayer = _V_("example_video_1");
-		videojs.options.flash.swf = "video-js.swf";
+		<script>
+			var myPlayer = _V_("example_video_1");
+		</script>
+		<script>
+			videojs.options.flash.swf = "video-js.swf";
 		</script>
 	</body>
 </html>
